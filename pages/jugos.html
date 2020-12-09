@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./../data/img/Favicon.png" />
     <link rel="stylesheet" href="./../style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <title>Pa' Sumercé - Jugos</title>
   </head>
+
   <body>
-    <nav>
+    <nav class="animate__animated animate__fadeInDown">
       <div class="logo_container">
         <img src="./../data/img/Logo.png" alt="" srcset="" />
       </div>
@@ -16,12 +23,325 @@
       <ul>
         <a href="https://readymag.com/u93831231/2408405/">Acerca de nosotros</a>
         <a href="./../recetas.html">Recetas</a>
-        <a class="selected" >Jugos que curan</a>
+        <a class="selected">Jugos que curan</a>
         <a href="./belleza.html">Belleza natural</a>
         <a href="#">Contáctenos</a>
       </ul>
     </nav>
+    
+    <main class="animate__animated animate__fadeIn">
+      <h1 class="secondary">Jugos que curan<span>.</span></h1>
+      <h3 class="secondary">Con ingredientes traídos del campo a tu <strong>hogar.</strong></h3>
 
-    <script src="./../scripts/script.js"></script>
+      <section class="card_container secondary">
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <div class="card animate__animated current">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Y tú?... <strong> ¿Que prefieres?, Bebidas...</strong></h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input
+                type="radio"
+                name="beverage_type"
+                value="Refrescantes"
+                checked="true"
+              />
+              <span>Refrescantes</span>
+            </label>
+            <label>
+              <input type="radio" name="beverage_type" value="Medicinales" />
+              <span>Medicinales</span>
+            </label>
+            <label>
+              <input type="radio" name="beverage_type" value="Relajantes" />
+              <span>Relajantes</span>
+            </label>
+            <label>
+              <input type="radio" name="beverage_type" value="Funcionales" />
+              <span>Funcionales</span>
+            </label>
+            <label>
+              <input type="radio" name="beverage_type" value="Dulces" />
+              <span>Dulces</span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="beverage_type"
+                value="Dulces (0 azúcar)"
+              />
+              <span>Dulces (0 azúcar)</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>A la hora de entrenar ¿Cuál es tu objetivo?</h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input
+                type="radio"
+                name="objective"
+                value="Peso"
+                checked="true"
+              />
+              <span>Perder peso</span>
+            </label>
+            <label>
+              <input type="radio" name="objective" value="Musculo" />
+              <span>Aumentar masa muscular</span>
+            </label>
+            <label>
+              <input type="radio" name="objective" value="Resistencia" />
+              <span>Ganar resistencia</span>
+            </label>
+            <label>
+              <input type="radio" name="objective" value="Tonificacion" />
+              <span>Tonificar</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>Escoge una enfermedad a aliviar:</h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input
+                type="radio"
+                name="disease"
+                value="Anemia"
+                checked="true"
+              />
+              <span>Anemia</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Diabetes" />
+              <span>Diabetes</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Gripe" />
+              <span>Gripe</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Alergias" />
+              <span>Alergias</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Adecciones" />
+              <span>Adecciones-higado</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Artritis" />
+              <span>Artritis osea</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Dolor_garganta" />
+              <span>Dolor de garganta</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Indigestion" />
+              <span>Indigestión</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Asma" />
+              <span>Asma</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Estres" />
+              <span>Estrés</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Insomnio" />
+              <span>Insomnio</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Colicos" />
+              <span>Cólicos</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Gastritis" />
+              <span>Gastritis</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Mareos" />
+              <span>Mareos</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Menopausia" />
+              <span>Menopausia</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Osteoporosis" />
+              <span>Osteoporosis</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Migrañas" />
+              <span>Migrañas</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Rinitis" />
+              <span>Rinitis</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Peso_bajo" />
+              <span>Peso bajo</span>
+            </label>
+            <label>
+              <input type="radio" name="disease" value="Presión" />
+              <span>Presión alta</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>Escoge las frutas / hortalizas que más te gusten:</h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input type="radio" name="4" value="Banano" checked="true" />
+              <span>Banano</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Cereza" />
+              <span>Cereza</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Guayaba" />
+              <span>Guayaba</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Apio" />
+              <span>Apio</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Coco" />
+              <span>Coco</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Maracuya" />
+              <span>Maracuya</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Arandanos" />
+              <span>Arandanos</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Fresa" />
+              <span>Fresa</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Naranja" />
+              <span>Naranja</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Durazno" />
+              <span>Durazno</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Espinaca" />
+              <span>Espinaca</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Mora" />
+              <span>Mora</span>
+            </label>        
+            <label>
+              <input type="radio" name="4" value="Frambuesa" />
+              <span>Frambuesa</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Manzana" />
+              <span>Manzana</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>
+              Y por último... si aún no lo sabias.
+              <strong>Pá sumercé</strong> es una marca que apoya el mercado
+              campesino, selecciona en que sector vives.
+            </h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input type="radio" name="5" value="Sur" checked="true" />
+              <span>Sur</span>
+            </label>
+            <label>
+              <input type="radio" name="5" value="Oeste" />
+              <span>Oeste</span>
+            </label>
+            <label>
+              <input type="radio" name="5" value="Sur-Pance" />
+              <span>Sur-Pance</span>
+            </label>
+            <label>
+              <input type="radio" name="5" value="Norte" />
+              <span>Norte</span>
+            </label>
+            <label>
+              <input type="radio" name="5" value="Centro-sur" />
+              <span>Centro-sur</span>
+            </label>
+            <label>
+              <input type="radio" name="5" value="Norte-Palmira" />
+              <span>Norte-Palmira</span>
+            </label>
+          </div>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card message animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+          </div>
+
+          <p>
+            ¡Has termiando! ahora empezamos a procesar la información
+            suministrada para recomendarte la bedida ideal para ti y el mercado
+            campesino más cercano en el que prodras comprar los ingredientes
+            necesarios para su preparación!.
+          </p>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <input
+          class="card_container_nextBtn"
+          type="button"
+          value="Siguiente"
+          onclick="nextButton()"
+        />
+      </section>
+    </main>
+
+    <script src="./../scripts/jugosSurvey.js"></script>
   </body>
 </html>

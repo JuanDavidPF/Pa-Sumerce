@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;900&display=swap');
 
 * {
     margin: 0;
     transition: all 0.3s ease-out;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 
 nav {
@@ -41,9 +45,7 @@ a {
     text-decoration: none;
     font-size: 20px;
     color: #306B30;
-    font-family: 'Libre Franklin', sans-serif;
     font-weight: 500;
-
 }
 
 a:hover:not(.selected) {
@@ -55,6 +57,187 @@ a.selected {
     color: #E04964;
     font-weight: 700;
 }
+
+main {
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+main>h1 {
+    margin-left: 150px;
+    font-size: 60px;
+
+    font-weight: 900;
+    color: #FF195B;
+}
+
+main>h1>span {
+    color: #FFA720;
+}
+
+main>h1.secondary{
+    color: #306B30;
+}
+
+h3 {
+    margin-left: 150px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #FF195B;
+}
+
+h3>strong {
+    font-weight: 900;
+}
+
+h3.secondary {
+
+    color: #306B30;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 25px 150px;
+    background-color: #EC2F73;
+}
+
+.card_container.secondary {
+
+    background-color: #306B30;
+}
+
+.card {
+    display: none;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.card.message {
+    align-items: center;
+}
+
+.card.message>p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.card.current {
+    display: flex;
+}
+
+.card_question {
+
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.card_question>img {
+    width: 55px;
+    margin-right: 15px;
+
+}
+
+.card_question>h3 {
+    margin-left: 5px;
+    color: white;
+
+}
+
+
+.card_options {
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 425px;
+}
+
+label.big {
+    width: 100%;
+
+}
+
+label.pictoric {
+    min-width: 0px;
+    width: 200px;
+}
+
+label>span {
+    cursor: pointer;
+    margin: 10px 0px;
+    padding: 20px 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    background-color: hsla(0, 0%, 100%, 0.404);
+}
+
+label.big>span {
+    text-align: left;
+}
+
+label.pictoric>span {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 10px;
+    font-size: 18px;
+
+}
+
+label.pictoric>span>img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+
+label>input {
+    display: none;
+}
+
+label>input:checked+span {
+    background-color: white;
+    color: #FF195B;
+    font-weight: 700;
+    box-shadow: #00000057 0px 5px 10px 2px;
+}
+
+.card_container_nextBtn {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0;
+    border: none;
+    width: 100%;
+    background-color: #FFA720;
+    align-self: center;
+    cursor: pointer;
+}
+
+.card_container_nextBtn:active {
+
+    background-color: white;
+    color: #FFA720;
+}
+
 
 @media (max-width: 1200px) {
 
@@ -81,6 +264,17 @@ a.selected {
 
     }
 
+    main>h1 {
+        margin-left: 50px;
+        font-size: 40px;
+    }
+
+    main>h3 {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+
 }
 
 
@@ -92,12 +286,59 @@ a.selected {
         flex-direction: column;
         width: 100%;
         background-color: #306B30;
-        padding: 20px 0px;
+        padding: 20px;
+
     }
 
     a {
         color: #ffffff;
         font-size: 18px;
+        padding-left: 30px;
+    }
+
+    nav {
+        margin-bottom: 0px;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    main>h1 {
+        margin-left: 30px;
+        font-size: 30px;
+    }
+
+    main>h3 {
+        margin-left: 30px;
+        font-size: 18px;
+    }
+
+    .card_container {
+        padding: 20px 30px;
+
+    }
+    .card.message>p {
+      
+        font-size: 20px;
+    
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    label>span {
+
+        font-size: 18px;
+
+    }
+
+
+    .card_container_nextBtn {
+
+        font-size: 18px;
+
     }
 
 }

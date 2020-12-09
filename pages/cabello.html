@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./../data/img/Favicon.png" />
+    <link rel="stylesheet" href="./../style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Pa' Sumercé - Cabello</title>
+  </head>
+
+  <body>
+    <nav class="animate__animated animate__fadeInDown">
+      <div class="logo_container">
+        <img src="./../data/img/Logo.png" alt="" srcset="" />
+      </div>
+
+      <ul>
+        <a href="https://readymag.com/u93831231/2408405/">Acerca de nosotros</a>
+        <a href="./../recetas.html">Recetas</a>
+        <a href="./../pages/jugos.html">Jugos que curan</a>
+        <a class="selected">Belleza natural</a>
+        <a href="#">Contáctenos</a>
+      </ul>
+    </nav>
+
+    <main class="animate__animated animate__fadeIn">
+      <h1 class="secondary">Cuidado del cabello<span>:</span></h1>
+      <h3 class="secondary">
+        Con ingredientes traídos del campo a tu <strong>hogar.</strong>
+      </h3>
+
+      <section class="card_container secondary">
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated current">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>
+              ¿Cuál es la caracteristica esencial a la hora de hablar de tu
+              cabello?
+            </h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input type="radio" name="1" value="Graso" checked="true" />
+              <span>Cabello Graso</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="1" value="Seco" />
+              <span>Cabello Seco</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="1" value="Fragíl" />
+              <span>Cabello Fragíl</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="1" value="Escaso" />
+              <span>Cabello Escaso</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Tienes problemas de caspa y/o escamación en el cabello?</h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input type="radio" name="2" value="Si" checked="true" />
+              <span>Si</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="2" value="No" />
+              <span>No</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Tienes problemas de caída de cabello?</h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input type="radio" name="3" value="Si" checked="true" />
+              <span>Si</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="3" value="No" />
+              <span>No</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>
+              Y por último... si aún no lo sabias.
+              <strong>Pá sumercé</strong> es una marca que apoya el mercado
+              campesino, selecciona en que sector vives .
+            </h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input type="radio" name="4" value="Sur" checked="true" />
+              <span>Sur</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Oeste" />
+              <span>Oeste</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Sur-Pance" />
+              <span>Sur-Pance</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Norte" />
+              <span>Norte</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Centro-sur" />
+              <span>Centro-sur</span>
+            </label>
+            <label>
+              <input type="radio" name="4" value="Norte-Palmira" />
+              <span>Norte-Palmira</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card message animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+          </div>
+
+          <p>
+            ¡Has termiando! ahora empezamos a procesar la información para
+            recomendarte el tratamiento ideal para ti y el mercado campesino más
+            cercano en el que prodras comprar los ingredientes necesarios para
+            tu preparación!.
+          </p>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <input
+          class="card_container_nextBtn"
+          type="button"
+          value="Siguiente"
+          onclick="nextButton()"
+        />
+      </section>
+    </main>
+
+    <script src="./../scripts/cabelloSurvey.js"></script>
+  </body>
+</html>

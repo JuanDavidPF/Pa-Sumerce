@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./../data/img/Favicon.png" />
+    <link rel="stylesheet" href="./../style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Pa' Sumercé - Cuidado facial</title>
+  </head>
+
+  <body>
+    <nav class="animate__animated animate__fadeInDown">
+      <div class="logo_container">
+        <img src="./../data/img/Logo.png" alt="" srcset="" />
+      </div>
+
+      <ul>
+        <a href="https://readymag.com/u93831231/2408405/">Acerca de nosotros</a>
+        <a href="./../recetas.html">Recetas</a>
+        <a class="selected">Jugos que curan</a>
+        <a href="./belleza.html">Belleza natural</a>
+        <a href="#">Contáctenos</a>
+      </ul>
+    </nav>
+
+    <main class="animate__animated animate__fadeIn">
+      <h1>Cuidado facial<span>:</span></h1>
+      <h3>Con ingredientes traídos del campo a tu <strong>hogar.</strong></h3>
+
+      <section class="card_container">
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated current">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Y tú?... <strong> ¿Que prefieres?</strong></h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input type="radio" name="1" value="Hidratacion" checked="true" />
+              <span>Hidratación</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="1" value="Exfolacion" />
+              <span>Exfolación</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Y tú? ....¿Qué tipo de piel tienes?</h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input type="radio" name="2" value="Seca" checked="true" />
+              <span>Seca</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="2" value="Grasa" />
+              <span>Grasosa</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="2" value="Mixta" />
+              <span>Mixta</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Y tú? ....¿Qué tipo de piel tienes?</h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input type="radio" name="3" value="Si" checked="true" />
+              <span>Si</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="3" value="No" />
+              <span>No</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+            <h3>
+              Y por último... si aún no lo sabias.
+              <strong>Pá sumercé</strong> es una marca que apoya el mercado
+              campesino, selecciona en que sector vives .
+            </h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input type="radio" name="4" value="Sur" checked="true" />
+              <span>Sur</span>
+            </label>
+
+            <label>
+              <input type="radio" name="4" value="Oeste" />
+              <span>Oeste</span>
+            </label>
+
+            <label>
+              <input type="radio" name="4" value="Sur-Pance" />
+              <span>Sur-Pance</span>
+            </label>
+
+            <label>
+              <input type="radio" name="4" value="Norte" />
+              <span>Norte</span>
+            </label>
+
+            <label>
+              <input type="radio" name="4" value="Centro-sur" />
+              <span>Centro-sur</span>
+            </label>
+
+            <label>
+              <input type="radio" name="4" value="Norte-Palmira" />
+              <span>Norte-Palmira</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card message animate__animated">
+          <div class="card_question">
+            <img src="./../data/img/questionIcon.png" alt="" srcset="" />
+          </div>
+
+          <p>
+            ¡Has termiando! ahora empezamos a procesar la información para
+            recomendarte el tratamiento ideal para ti y el mercado campesino más
+            cercano en el que prodras comprar los ingredientes necesarios para
+            tu preparación!.
+          </p>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <input
+          class="card_container_nextBtn"
+          type="button"
+          value="Siguiente"
+          onclick="nextButton()"
+        />
+      </section>
+    </main>
+    <script src="./../scripts/facialSurvey.js"></script>
+  </body>
+</html>

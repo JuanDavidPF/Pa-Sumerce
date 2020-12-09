@@ -5,23 +5,325 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./data/img/Favicon.png" />
     <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <title>Pa' Sumercé - Recetas</title>
   </head>
+
   <body>
-    <nav>
+    <nav class="animate__animated animate__fadeInDown">
       <div class="logo_container">
         <img src="./data/img/Logo.png" alt="" srcset="" />
       </div>
 
       <ul>
         <a href="https://readymag.com/u93831231/2408405/">Acerca de nosotros</a>
-        <a class="selected" >Recetas</a>
+        <a class="selected">Recetas</a>
         <a href="./pages/jugos.html">Jugos que curan</a>
         <a href="./pages/belleza.html">Belleza natural</a>
-        <a >Contáctenos</a>
+        <a>Contáctenos</a>
       </ul>
     </nav>
 
-    <script src="./scripts/script.js"></script>
+    <main class="animate__animated animate__fadeIn">
+      <h1>Recetas<span>.</span></h1>
+      <h3>Con ingredientes traídos del campo a tu <strong>hogar.</strong></h3>
+      
+      <section class="card_container">
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <div class="card animate__animated current">
+          <div class="card_question">
+            <img src="./data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Y tú?... <strong> ¿Que prefieres?</strong></h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input
+                type="radio"
+                name="salt_vs_sugar"
+                value="Sal"
+                checked="true"
+              />
+              <span>Comidas y recetas de alimentos salados.</span>
+            </label>
+            <label class="big">
+              <input type="radio" name="salt_vs_sugar" value="Azucar" />
+              <span>Preparaciones dulces, de pasteleria y reposteria.</span>
+            </label>
+          </div>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Y tú?... <strong> ¿Que prefieres?</strong></h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input
+                type="radio"
+                name="traditional_vs_international"
+                value="Tradicional"
+                checked="true"
+              />
+              <span>Comidas y recetas Colombianas (tradicionales).</span>
+            </label>
+            <label class="big">
+              <input
+                type="radio"
+                name="traditional_vs_international"
+                value="Internacional"
+              />
+              <span>Comidas y recetas de otros paises (internacionales).</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Y tú?... <strong> ¿Que prefieres?</strong></h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input type="radio" name="protein" value="Res" checked="true" />
+              <span>Carne de res</span>
+            </label>
+
+            <label>
+              <input type="radio" name="protein" value="Cerdo" />
+              <span>Carne de cerdo</span>
+            </label>
+
+            <label>
+              <input type="radio" name="protein" value="Marisco" />
+              <span>Mariscos</span>
+            </label>
+
+            <label>
+              <input type="radio" name="protein" value="Pollo" />
+              <span>Pollo</span>
+            </label>
+
+            <label>
+              <input type="radio" name="protein" value="Pescado" />
+              <span>Pescado</span>
+            </label>
+
+            <label>
+              <input type="radio" name="protein" value="Vegatariano" />
+              <span>¿Vegatarian@?</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./data/img/questionIcon.png" alt="" srcset="" />
+            <h3>¿Y tú?... <strong> ¿Que prefieres?</strong></h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input
+                type="radio"
+                name="home_vs_gourmet"
+                value="Casera"
+                checked="true"
+              />
+              <span>Comidas y recetas caseras.</span>
+            </label>
+
+            <label class="big">
+              <input type="radio" name="home_vs_gourmet" value="Gourmet" />
+              <span>Comidas y recetas Gourmet.</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./data/img/questionIcon.png" alt="" srcset="" />
+            <h3>A la hora de comer te fijas en:</h3>
+          </div>
+
+          <div class="card_options">
+            <label class="big">
+              <input
+                type="radio"
+                name="food_value"
+                value="Precio"
+                checked="true"
+              />
+              <span>El precio del plato a preparar.</span>
+            </label>
+
+            <label class="big">
+              <input type="radio" name="food_value" value="Nutricion" />
+              <span
+                >El valor nutricional de todos los componentes del plato.</span
+              >
+            </label>
+            <label class="big">
+              <input type="radio" name="food_value" value="Tiempo" />
+              <span
+                >El tiempo de preparación que conlleva realizar la receta.
+              </span>
+            </label>
+            <label class="big">
+              <input type="radio" name="food_value" value="Exotico" />
+              <span
+                >El valor diferenciador (que la receta no sea
+                convencional).</span
+              >
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./data/img/questionIcon.png" alt="" srcset="" />
+            <h3>La comida de que pelicula prefieres o te gustaria probar:</h3>
+          </div>
+
+          <div class="card_options">
+            <label class="pictoric">
+              <input
+                type="radio"
+                name="food_movie"
+                value="Hamburguesas"
+                checked="true"
+              />
+
+              <span>
+                <img
+                  src="./data/img/lluvia de hamburguesas - portada.png"
+                />Lluvia de hamburguesas</span
+              >
+            </label>
+
+            <label class="pictoric">
+              <input type="radio" name="food_movie" value="Chocolate" />
+              <span>
+                <img src="./data/img/charlie - portada.png" />
+                Charlie y la fabrica de chocolates</span
+              >
+            </label>
+            <label class="pictoric">
+              <input type="radio" name="food_movie" value="Coco" />
+              <span>
+                <img src="./data/img/coco - portada.png" />
+                Coco
+              </span>
+            </label>
+            <label class="pictoric">
+              <input type="radio" name="food_movie" value="Chihiro" />
+              <span>
+                <img src="./data/img/chihiro - portada.png" />
+                El viaje de chihiro</span
+              >
+            </label>
+            <label class="pictoric">
+              <input type="radio" name="food_movie" value="Panda" />
+              <span>
+                <img src="./data/img/kung fu panda - portada.png" />
+                Kung fu panda</span
+              >
+            </label>
+            <label class="pictoric">
+              <input type="radio" name="food_movie" value="Ratatouille" />
+              <span>
+                <img src="./data/img/ratatouille - portada.png" />
+                Ratatouille</span
+              >
+            </label>
+          </div>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card animate__animated">
+          <div class="card_question">
+            <img src="./data/img/questionIcon.png" alt="" srcset="" />
+            <h3>A la hora de comer te fijas en:</h3>
+          </div>
+
+          <div class="card_options">
+            <label>
+              <input type="radio" name="location" value="Sur" checked="true" />
+              <span>Sur</span>
+            </label>
+            <label>
+              <input type="radio" name="location" value="Oeste" />
+              <span>Oeste</span>
+            </label>
+            <label>
+              <input type="radio" name="location" value="Sur_Pance" />
+              <span>Sur-Pance</span>
+            </label>
+            <label>
+              <input type="radio" name="location" value="Norte" />
+              <span>Norte</span>
+            </label>
+            <label>
+              <input type="radio" name="location" value="Centro_Sur" />
+              <span>Centro-Sur</span>
+            </label>
+            <label>
+              <input type="radio" name="location" value="Norte_Palmira" />
+              <span>Norte-Palmira</span>
+            </label>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <div class="card message animate__animated">
+          <div class="card_question">
+            <img src="./data/img/questionIcon.png" alt="" srcset="" />
+          </div>
+
+          <p>
+            ¡Has termiando! ahora empezamos a procesar la información de tus
+            gustos y preferencias para recomendarte la receta ideal para ti y el
+            mercado campesino más cercano en el que prodras comprar los
+            ingredientes necesarios para tu receta!.
+          </p>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <input
+          class="card_container_nextBtn"
+          type="button"
+          value="Siguiente"
+          onclick="nextButton()"
+        />
+      </section>
+    </main>
+
+    <script src="./scripts/recetaSurvey.js"></script>
   </body>
 </html>
