@@ -22,17 +22,26 @@
 
       <ul>
         <a href="https://readymag.com/u93831231/2408405/">Acerca de nosotros</a>
-        <a class="selected">Recetas</a>
-        <a href="./pages/jugos.html">Jugos que curan</a>
-        <a href="./pages/belleza.html">Belleza natural</a>
-        <a>Contáctenos</a>
+        <a
+          href="https://readymag.com/u93831231/2408405/recetas/"
+          class="selected"
+          >Recetas</a
+        >
+        <a href="https://readymag.com/u93831231/2408405/jugos/"
+          >Jugos que curan</a
+        >
+        <a href="https://readymag.com/u93831231/2408405/belleza/"
+          >Belleza natural</a
+        >
+        <a href="#">Contáctenos</a>
       </ul>
     </nav>
 
     <main class="animate__animated animate__fadeIn">
-      <h1>Recetas<span>.</span></h1>
+      <h1 class="recetaName">Recetas<span>.</span></h1>
       <h3>Con ingredientes traídos del campo a tu <strong>hogar.</strong></h3>
-      
+      <h3 class="recetaIngredients"></h3>
+      <h3 class="recetaProcess"></h3>
       <section class="card_container">
         <!---------------------------------------------------------------------------------------------->
         <!---------------------------------------------------------------------------------------------->
@@ -44,17 +53,12 @@
 
           <div class="card_options">
             <label class="big">
-              <input
-                type="radio"
-                name="salt_vs_sugar"
-                value="Sal"
-                checked="true"
-              />
-              <span>Comidas y recetas de alimentos salados.</span>
+              <input type="radio" name="1" value="dulce" checked="true" />
+              <span>Preparaciones dulces, de pasteleria y reposteria.</span>
             </label>
             <label class="big">
-              <input type="radio" name="salt_vs_sugar" value="Azucar" />
-              <span>Preparaciones dulces, de pasteleria y reposteria.</span>
+              <input type="radio" name="1" value="salada" />
+              <span>Comidas y recetas de alimentos salados.</span>
             </label>
           </div>
         </div>
@@ -69,20 +73,11 @@
 
           <div class="card_options">
             <label class="big">
-              <input
-                type="radio"
-                name="traditional_vs_international"
-                value="Tradicional"
-                checked="true"
-              />
+              <input type="radio" name="2" value="tradicional" checked="true" />
               <span>Comidas y recetas Colombianas (tradicionales).</span>
             </label>
             <label class="big">
-              <input
-                type="radio"
-                name="traditional_vs_international"
-                value="Internacional"
-              />
+              <input type="radio" name="2" value="internacional" />
               <span>Comidas y recetas de otros paises (internacionales).</span>
             </label>
           </div>
@@ -99,32 +94,32 @@
 
           <div class="card_options">
             <label>
-              <input type="radio" name="protein" value="Res" checked="true" />
+              <input type="radio" name="3" value="res" checked="true" />
               <span>Carne de res</span>
             </label>
 
             <label>
-              <input type="radio" name="protein" value="Cerdo" />
-              <span>Carne de cerdo</span>
-            </label>
-
-            <label>
-              <input type="radio" name="protein" value="Marisco" />
-              <span>Mariscos</span>
-            </label>
-
-            <label>
-              <input type="radio" name="protein" value="Pollo" />
+              <input type="radio" name="3" value="pollo" />
               <span>Pollo</span>
             </label>
 
             <label>
-              <input type="radio" name="protein" value="Pescado" />
+              <input type="radio" name="3" value="cerdo" />
+              <span>Carne de cerdo</span>
+            </label>
+
+            <label>
+              <input type="radio" name="3" value="marisco" />
+              <span>Mariscos</span>
+            </label>
+
+            <label>
+              <input type="radio" name="3" value="pescado" />
               <span>Pescado</span>
             </label>
 
             <label>
-              <input type="radio" name="protein" value="Vegatariano" />
+              <input type="radio" name="3" value="vegatariano" />
               <span>¿Vegatarian@?</span>
             </label>
           </div>
@@ -141,17 +136,12 @@
 
           <div class="card_options">
             <label class="big">
-              <input
-                type="radio"
-                name="home_vs_gourmet"
-                value="Casera"
-                checked="true"
-              />
+              <input type="radio" name="4" value="casera" checked="true" />
               <span>Comidas y recetas caseras.</span>
             </label>
 
             <label class="big">
-              <input type="radio" name="home_vs_gourmet" value="Gourmet" />
+              <input type="radio" name="4" value="gourmet" />
               <span>Comidas y recetas Gourmet.</span>
             </label>
           </div>
@@ -168,29 +158,26 @@
 
           <div class="card_options">
             <label class="big">
-              <input
-                type="radio"
-                name="food_value"
-                value="Precio"
-                checked="true"
-              />
+              <input type="radio" name="5" value="precio" checked="true" />
               <span>El precio del plato a preparar.</span>
             </label>
 
             <label class="big">
-              <input type="radio" name="food_value" value="Nutricion" />
-              <span
-                >El valor nutricional de todos los componentes del plato.</span
-              >
-            </label>
-            <label class="big">
-              <input type="radio" name="food_value" value="Tiempo" />
+              <input type="radio" name="5" value="tiempo" />
               <span
                 >El tiempo de preparación que conlleva realizar la receta.
               </span>
             </label>
+
             <label class="big">
-              <input type="radio" name="food_value" value="Exotico" />
+              <input type="radio" name="5" value="nutricional" />
+              <span
+                >El valor nutricional de todos los componentes del plato.</span
+              >
+            </label>
+
+            <label class="big">
+              <input type="radio" name="5" value="diferente" />
               <span
                 >El valor diferenciador (que la receta no sea
                 convencional).</span
@@ -207,13 +194,12 @@
             <img src="./data/img/questionIcon.png" alt="" srcset="" />
             <h3>La comida de que pelicula prefieres o te gustaria probar:</h3>
           </div>
-
           <div class="card_options">
             <label class="pictoric">
               <input
                 type="radio"
-                name="food_movie"
-                value="Hamburguesas"
+                name="6"
+                value="comida rapida"
                 checked="true"
               />
 
@@ -225,35 +211,39 @@
             </label>
 
             <label class="pictoric">
-              <input type="radio" name="food_movie" value="Chocolate" />
+              <input type="radio" name="6" value="dulce" />
               <span>
                 <img src="./data/img/charlie - portada.png" />
                 Charlie y la fabrica de chocolates</span
               >
             </label>
+
             <label class="pictoric">
-              <input type="radio" name="food_movie" value="Coco" />
+              <input type="radio" name="6" value="mexico" />
               <span>
                 <img src="./data/img/coco - portada.png" />
                 Coco
               </span>
             </label>
+
             <label class="pictoric">
-              <input type="radio" name="food_movie" value="Chihiro" />
+              <input type="radio" name="6" value="japon" />
               <span>
                 <img src="./data/img/chihiro - portada.png" />
                 El viaje de chihiro</span
               >
             </label>
+
             <label class="pictoric">
-              <input type="radio" name="food_movie" value="Panda" />
+              <input type="radio" name="6" value="chino" />
               <span>
                 <img src="./data/img/kung fu panda - portada.png" />
                 Kung fu panda</span
               >
             </label>
+
             <label class="pictoric">
-              <input type="radio" name="food_movie" value="Ratatouille" />
+              <input type="radio" name="6" value="francia" />
               <span>
                 <img src="./data/img/ratatouille - portada.png" />
                 Ratatouille</span
@@ -272,27 +262,27 @@
 
           <div class="card_options">
             <label>
-              <input type="radio" name="location" value="Sur" checked="true" />
+              <input type="radio" name="7" value="Sur" checked="true" />
               <span>Sur</span>
             </label>
             <label>
-              <input type="radio" name="location" value="Oeste" />
+              <input type="radio" name="7" value="Oeste" />
               <span>Oeste</span>
             </label>
             <label>
-              <input type="radio" name="location" value="Sur_Pance" />
+              <input type="radio" name="7" value="Sur_Pance" />
               <span>Sur-Pance</span>
             </label>
             <label>
-              <input type="radio" name="location" value="Norte" />
+              <input type="radio" name="7" value="Norte" />
               <span>Norte</span>
             </label>
             <label>
-              <input type="radio" name="location" value="Centro_Sur" />
+              <input type="radio" name="7" value="Centro_Sur" />
               <span>Centro-Sur</span>
             </label>
             <label>
-              <input type="radio" name="location" value="Norte_Palmira" />
+              <input type="radio" name="7" value="Norte_Palmira" />
               <span>Norte-Palmira</span>
             </label>
           </div>
@@ -322,8 +312,10 @@
           onclick="nextButton()"
         />
       </section>
+    
+    
     </main>
-
+    <script src="./scripts/PapaParse-5.0.2/papaparse.js"></script>
     <script src="./scripts/recetaSurvey.js"></script>
   </body>
 </html>
