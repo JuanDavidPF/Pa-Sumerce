@@ -19,14 +19,14 @@ let geolocation = [];
 let recetasDatabase;
 let recetasDetalles;
 
-Papa.parse("/data/csv/recetas.csv", {
+Papa.parse("data/csv/recetas.csv", {
   download: true,
   complete: function (results) {
     recetasDatabase = results.data;
   },
 });
 
-Papa.parse("/data/csv/recetasDetalles.csv", {
+Papa.parse("data/csv/recetasDetalles.csv", {
   download: true,
   complete: function (results) {
     recetasDetalles = results.data;
